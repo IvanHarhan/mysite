@@ -1,0 +1,288 @@
+body {
+
+background: #0f172a;
+
+color: white;
+
+font-family: Arial;
+
+margin:0;
+
+}
+
+
+/* 1 центрирование */
+
+.container {
+
+text-align:center;
+
+margin-top:80px;
+
+}
+
+
+
+/* 2 красивый заголовок */
+
+h1{
+
+font-size:50px;
+
+margin-bottom:10px;
+
+}
+
+
+/* 3 серый текст */
+
+.subtitle{
+
+color:gray;
+
+font-size:20px;
+
+margin-bottom:30px;
+
+}
+
+
+/* 4 красивая кнопка */
+
+.mainButton{
+
+padding:15px 40px;
+
+font-size:20px;
+
+background:#3b82f6;
+
+border:none;
+
+border-radius:12px;
+
+color:white;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+
+/* 5 hover эффект */
+
+.mainButton:hover{
+
+background:#2563eb;
+
+transform:scale(1.1);
+
+}
+
+
+/* 6 карточки */
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+
+/* 7 стиль карточек */
+
+.card{
+
+background:#1e293b;
+
+padding:30px;
+
+width:200px;
+
+border-radius:15px;
+
+transition:0.3s;
+
+}
+
+
+/* 8 hover карточек */
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+/* 9 тени */
+
+.card{
+
+box-shadow:0px 10px 30px rgba(0,0,0,0.5);
+
+}
+
+
+/* 10 плавность */
+
+*{
+
+transition:0.2s;
+
+}
+
+.blur{
+
+position:absolute;
+
+right:-300px;
+
+top:-600px;
+
+width:800px;
+
+height:800px;
+
+background:purple;
+
+filter:blur(180px);
+
+z-index:-1;
+
+pointer-events:none;
+
+
+}
+
+.section{
+
+margin-top:150px;
+
+text-align:center;
+
+}
+
+.effectBox{
+
+margin:40px auto;
+
+padding:40px;
+
+width:300px;
+
+border-radius:15px;
+
+background:#1e293b;
+
+}
+
+.glow{
+
+box-shadow:0px 0px 50px #7c3aed;
+
+}
+
+.gradient{
+
+background:linear-gradient(
+
+45deg,
+
+#2563eb,
+
+#7c3aed
+
+);
+
+}
+
+
+
+.neon{
+
+color:#7c3aed;
+
+text-shadow:
+
+0px 0px 5px #7c3aed,
+
+0px 0px 20px #7c3aed,
+
+0px 0px 40px #7c3aed;
+
+}
+
+.borderAnim{
+
+border:2px solid #7c3aed;
+
+animation:borderMove 1s infinite;
+
+}
+
+@keyframes borderMove{
+
+0%{
+
+box-shadow:0px 0px 10px #7c3aed;
+
+}
+
+50%{
+
+box-shadow:0px 0px 40px #7c3aed;
+
+}
+
+100%{
+
+box-shadow:0px 0px 10px #7c3aed;
+
+}
+
+}
+
+.avatar{
+
+width:160px;
+
+height:160px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin-bottom:20px;
+
+border:3px solid #3b82f6;
+
+box-shadow:0px 0px 40px #3b82f6;
+
+}
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:1s;
+
+}
+
+
+.show{
+
+opacity:1;
+
+transform:translateY(0px);
+
+}
